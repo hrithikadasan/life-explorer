@@ -7,7 +7,7 @@ Life Explorer is an interactive timeline web application that helps users visual
 - **Frontend:** React, TypeScript, Vite
 - **Styling:** CSS Modules / Tailwind (if applicable)
 - **Tooling:** ESLint, Prettier
-- **Hosting/Deployment:** (add e.g. Vercel, Netlify, GitHub Pages)
+- **Hosting/Deployment:** Vercel (live at https://life-explorer.vercel.app/)
 
 ## Features
 1. Dynamic timeline view with zoom and scroll
@@ -44,6 +44,9 @@ npm run serve    # serve build locally
 
 ## Demo Video
 > [Watch the demo on YouTube](https://youtu.be/your-demo-link)
+
+## Live Deployment
+> 🔗 [Visit the live site](https://life-explorer.vercel.app/) (HTTPS, no errors on load)
 
 ## Architecture Diagram
 
