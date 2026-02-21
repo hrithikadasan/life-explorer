@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Life Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+Life Explorer is an interactive timeline web application that helps users visualize events, moments, and historical data in an engaging split‑view layout. The site is built with React, TypeScript, and Vite and focuses on modular components and easy extensibility.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** CSS Modules / Tailwind (if applicable)
+- **Tooling:** ESLint, Prettier
+- **Hosting/Deployment:** (add e.g. Vercel, Netlify, GitHub Pages)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+1. Dynamic timeline view with zoom and scroll
+2. Event cards showing details and images
+3. Responsive split‑view layout for desktop and mobile
+4. Input parsing utility to convert text to events
+5. Component‑based architecture for easy reuse
+6. Interactive landing page with sample data
 
-## React Compiler
+## Installation
+```bash
+# clone the repo
+git clone https://github.com/hrithikadasan/life-explorer.git
+cd life-explorer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# install dependencies
+npm install
+# or yarn install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Running the App
+```bash
+npm run dev      # start dev server
+npm run build    # production build
+npm run serve    # serve build locally
 ```
+
+## Screenshots
+![Landing Page](screenshots/landing.png)
+![Timeline View](screenshots/timeline.png)
+![Event Card](screenshots/event-card.png)
+
+*(Add at least three screenshots in a `screenshots/` directory)*
+
+## Demo Video
+> [Watch the demo on YouTube](https://youtu.be/your-demo-link)
+
+## Architecture Diagram
+
+![Architecture](docs/architecture-diagram.png)
+
+*(See `docs/` for diagrams and further documentation)*
+
+## API Documentation
+> _No backend API currently used._
+
+## Team Members
+- Hrithika Dasan
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
